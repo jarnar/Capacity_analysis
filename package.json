@@ -7,6 +7,14 @@
   },
   "dependencies": {
     "express": "3.5.0",
+    "forever": "^0.15.3",
     "jade": "*"
+  },
+    "watch":[  //添加受监控的文件，以便自动更新
+        "models",
+        "routes"
+    ],
+  "watch_options": {  //监视配置
+    "followSymlinks": true
   }
 }
