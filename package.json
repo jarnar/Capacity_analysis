@@ -6,15 +6,16 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "bootstrap": "^4.1.2",
+    "ejs": "^2.6.1",
     "express": "3.5.0",
     "forever": "^0.15.3",
-    "jade": "*"
+    "jade": "*",
+    "less": "^3.7.1",
+    "socket.io": "^2.1.1"
   },
-    "watch":[  //添加受监控的文件，以便自动更新
-        "models",
-        "routes"
-    ],
-  "watch_options": {  //监视配置
-    "followSymlinks": true
-  }
+  "watch": [
+    "models",
+    "routes"
+  ]
 }

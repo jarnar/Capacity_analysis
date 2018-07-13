@@ -9,6 +9,9 @@ var app = require('../app');
 var debug = require('debug')('test1:server');
 var http = require('http');
 
+// Create socket.io
+var io = require('socket.io')(server);
+
 /**
  * Get port from environment and store in Express.
  */
@@ -89,3 +92,16 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+
+// Wait for socket event
+// io.on('connection', function(socket){
+//     console.log('a user connected');
+//     socket.on('disconnect', function(){
+//         console.log('user disconnected');
+//     });
+//     socket.on('danmaku send', function(msg){
+//         console.log('message: ' + msg);
+//         io.emit('danmaku show', msg);
+//     });
+// });
