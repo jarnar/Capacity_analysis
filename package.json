@@ -6,6 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^0.12.2",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.2",
     "cors": "^2.8.4",
